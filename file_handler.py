@@ -21,9 +21,9 @@ def read_data():
         reader = csv.reader(file)
 
         try:
-            next(reader)   # skip header safely
+            next(reader)   
         except StopIteration:
-            return data    # file is empty, return empty list
+            return data    
 
         for row in reader:
             data.append(row)
@@ -41,3 +41,4 @@ def write_data(data):
         ])
         for row in data:
             writer.writerow(row)
+
