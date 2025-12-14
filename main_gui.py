@@ -81,7 +81,7 @@ def select_row(event):
         work.set(data[4])
         comm.set(data[5])
 
-# ---------- FORM ----------
+# ---------- MAIN CODE ----------
 form = tk.Frame(root)
 form.pack(pady=10)
 
@@ -135,3 +135,4 @@ table.bind("<<TreeviewSelect>>", select_row)
 
 show_all()
 root.mainloop()
+
